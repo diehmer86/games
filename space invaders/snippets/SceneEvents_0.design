@@ -16,7 +16,7 @@
             <group eventID="2" id="-1"/>
         </step>
     </group>
-    <group eventID="2" id="6">
+    <group eventID="2" id="1">
         <if comment="false" x="29" y="286">
             <group eventID="2" id="-1">
                 <set-dxy comment="false" x="40" y="319">

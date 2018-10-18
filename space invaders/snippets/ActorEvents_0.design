@@ -66,7 +66,7 @@
                         <set-xy comment="false" x="37" y="78">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val=""/>
+                            <int id="2" val="1"/>
                         </set-xy>
                     </group>
                     <less comment="false" id="0" x="0" y="0">
@@ -82,7 +82,18 @@
                         <set-xy comment="false" x="37" y="160">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="1"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-wh>
+                                    <get-wh comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-wh>
+                                </minus>
+                                <int id="1" val="1"/>
+                            </minus>
                         </set-xy>
                     </group>
                     <more comment="false" id="0" x="0" y="0">
@@ -104,10 +115,52 @@
             </group>
         </step>
     </group>
-    <group eventID="2" id="-1">
-        <more comment="false" x="449" y="79">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </more>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <create-actor3 comment="false" x="26" y="42">
+                    <actortype eid="4" id="0"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <push-shove comment="false" x="26" y="82">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="-1"/>
+                    <int id="4" val="40"/>
+                </push-shove>
+            </group>
+            <control eid="4" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
     </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-type-create-kill comment="false" x="73" y="42">
+            <group eventID="4" id="-1"/>
+            <int id="0" val="0"/>
+            <actortype id="1"/>
+        </event-type-create-kill>
+    </group>
+    <group eventID="4" id="-1">
+        <actor-created-killed comment="false" x="333" y="53"/>
+    </group>
+    <group eventID="5" id="0">
+        <event-actor-screen comment="false" x="15" y="15">
+            <group eventID="5" id="-1"/>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="1"/>
+        </event-actor-screen>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>
