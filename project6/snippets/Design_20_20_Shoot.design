@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <play-sound4 comment="false" x="37" y="73">
+                            <int id="0" val="0"/>
+                            <sound eid="47" id="1"/>
+                        </play-sound4>
+                        <if comment="false" x="37" y="100">
+                            <group eventID="1" id="-1">
+                                <create-actor3 comment="false" x="48" y="138">
+                                    <actortype eid="52" id="0"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </plus>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <push-shove2 comment="false" x="48" y="175">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="90"/>
+                                    <int id="3" val="10"/>
+                                </push-shove2>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <getanim comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                </getanim>
+                                <int id="1" val="Down"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="214">
+                            <group eventID="1" id="-1">
+                                <create-actor3 comment="false" x="48" y="252">
+                                    <actortype eid="52" id="0"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </plus>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <push-shove2 comment="false" x="48" y="289">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="0"/>
+                                    <int id="3" val="10"/>
+                                </push-shove2>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <getanim comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                </getanim>
+                                <int id="1" val="Right"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="328">
+                            <group eventID="1" id="-1">
+                                <create-actor3 comment="false" x="48" y="366">
+                                    <actortype eid="52" id="0"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </plus>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="-1"/>
+                                    </plus>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <push-shove2 comment="false" x="48" y="403">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="270"/>
+                                    <int id="3" val="10"/>
+                                </push-shove2>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <getanim comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                </getanim>
+                                <int id="1" val="Up"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="442">
+                            <group eventID="1" id="-1">
+                                <create-actor3 comment="false" x="48" y="480">
+                                    <actortype eid="52" id="0"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="-1"/>
+                                    </plus>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </plus>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <push-shove2 comment="false" x="48" y="517">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="180"/>
+                                    <int id="3" val="10"/>
+                                </push-shove2>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <getanim comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                </getanim>
+                                <int id="1" val="Left"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <control eid="7" id="1"/>
+                    </keystate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

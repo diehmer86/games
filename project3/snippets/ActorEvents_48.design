@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="45">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <set-game-val-0 comment="false" x="26" y="72">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-game-val-0>
+                <play-sound4 comment="false" x="26" y="102">
+                    <int id="0" val="0"/>
+                    <sound eid="47" id="1"/>
+                </play-sound4>
+            </group>
+        </collide>
+    </group>
+    <group eventID="1" id="1">
+        <get-game-att comment="false" x="194" y="335">
+            <int id="0" val=""/>
+        </get-game-att>
+    </group>
+    <group eventID="1" id="3">
+        <if comment="false" x="111" y="258">
+            <group eventID="1" id="-1"/>
+            <int id="0" val=""/>
+        </if>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
