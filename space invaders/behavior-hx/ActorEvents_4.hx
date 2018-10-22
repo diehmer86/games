@@ -71,11 +71,13 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_4 extends ActorScript
 {
+	public var _healthpoints:Actor;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("health points", "_healthpoints");
 		
 	}
 	
@@ -87,6 +89,7 @@ class ActorEvents_4 extends ActorScript
 		{
 			if(wrapper.enabled && sameAsAny(getActorType(2), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
+				event.otherActor.shout("_customEvent_" + "Hit");
 				recycleActor(actor);
 			}
 		});
