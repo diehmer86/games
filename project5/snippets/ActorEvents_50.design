@@ -43,13 +43,13 @@
         </push-shove>
     </group>
     <group eventID="1" id="-1">
-        <getdir comment="false" x="790" y="506">
+        <getdir comment="false" x="610" y="268">
             <ACTOR eid="this" id="0"/>
         </getdir>
         <getdir comment="false" x="561" y="487">
             <ACTOR eid="this" id="0"/>
         </getdir>
-        <getdir comment="false" x="610" y="268">
+        <getdir comment="false" x="790" y="506">
             <ACTOR eid="this" id="0"/>
         </getdir>
     </group>
@@ -135,17 +135,17 @@
         </get-dxy>
     </group>
     <group eventID="2" id="-1">
-        <eq comment="false" x="65" y="359">
-            <int id="0" val=""/>
-            <int id="1" val="avoid"/>
-        </eq>
-        <eq comment="false" x="65" y="359">
-            <int id="0" val=""/>
-            <int id="1" val="avoid"/>
-        </eq>
         <getanim comment="false" x="34" y="543">
             <ACTOR eid="this" id="0"/>
         </getanim>
+        <eq comment="false" x="65" y="359">
+            <int id="0" val=""/>
+            <int id="1" val="avoid"/>
+        </eq>
+        <eq comment="false" x="65" y="359">
+            <int id="0" val=""/>
+            <int id="1" val="avoid"/>
+        </eq>
     </group>
     <group eventID="3" id="0">
         <event-periodic comment="false" x="15" y="15">
