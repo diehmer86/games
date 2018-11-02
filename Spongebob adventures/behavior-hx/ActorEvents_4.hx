@@ -69,34 +69,105 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_0 extends ActorScript
+class ActorEvents_4 extends ActorScript
 {
+	public var _currentdirection:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("current direction", "_currentdirection");
+		_currentdirection = "";
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && sameAsAny(getActorType(6), event.otherActor.getType(),event.otherActor.getGroup()))
+			if(wrapper.enabled)
 			{
-				recycleActor(actor);
+				if(isKeyDown("left"))
+				{
+					actor.setXVelocity(-10);
+					actor.setAnimation("" + "walking left");
+					_currentdirection = "left";
+					propertyChanged("_currentdirection", _currentdirection);
+				}
+				else if(isKeyDown("right"))
+				{
+					actor.setXVelocity(10);
+					actor.setAnimation("" + "walking right");
+					_currentdirection = "right";
+					propertyChanged("_currentdirection", _currentdirection);
+				}
+				else
+				{
+					actor.setXVelocity(0);
+					if((_currentdirection == "left"))
+					{
+						actor.setAnimation("" + "idle left");
+					}
+					else if((_currentdirection == "right"))
+					{
+						actor.setAnimation("" + "idle right");
+					}
+				}
+				if(isKeyDown("up"))
+				{
+					actor.setYVelocity(-10);
+					actor.setAnimation("" + "walking up");
+					_currentdirection = "up";
+					propertyChanged("_currentdirection", _currentdirection);
+				}
+				else if(isKeyDown("down"))
+				{
+					actor.setYVelocity(10);
+					actor.setAnimation("" + "walking down");
+					_currentdirection = "down";
+					propertyChanged("_currentdirection", _currentdirection);
+				}
+				else
+				{
+					actor.setYVelocity(0);
+					if((_currentdirection == "up"))
+					{
+						actor.setAnimation("" + "idle up");
+					}
+					else if((_currentdirection == "down"))
+					{
+						actor.setAnimation("" + "idle down");
+					}
+				}
 			}
 		});
 		
-		/* ======================== Specific Actor ======================== */
-		addActorPositionListener(actor, function(enteredScreen:Bool, exitedScreen:Bool, enteredScene:Bool, exitedScene:Bool, list:Array<Dynamic>):Void
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("action2", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && exitedScreen)
+			if(wrapper.enabled && pressed)
 			{
-				recycleActor(actor);
+				createRecycledActor(getActorType(0), actor.getX(), actor.getY(), Script.FRONT);
+				getLastCreatedActor().applyImpulse(, , 40);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((actor.getX() < 0))
+				{
+					actor.setX(10);
+				}
+				else if((actor.getX() > 600))
+				{
+					actor.setX(600);
+				}
 			}
 		});
 		
