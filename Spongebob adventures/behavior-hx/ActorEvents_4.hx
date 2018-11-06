@@ -72,6 +72,8 @@ import com.stencyl.graphics.shaders.BloomShader;
 class ActorEvents_4 extends ActorScript
 {
 	public var _currentdirection:String;
+	public var _DIRECTIONOFMONSTER:String;
+	public var _directionofmonster:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -79,6 +81,9 @@ class ActorEvents_4 extends ActorScript
 		super(actor);
 		nameMap.set("current direction", "_currentdirection");
 		_currentdirection = "";
+		nameMap.set("DIRECTION OF MONSTER", "_DIRECTIONOFMONSTER");
+		_DIRECTIONOFMONSTER = "";
+		nameMap.set("direction of monster", "_directionofmonster");
 		
 	}
 	
@@ -145,28 +150,43 @@ class ActorEvents_4 extends ActorScript
 			}
 		});
 		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((actor.getScreenX() < 0))
+				{
+					actor.setX(1);
+				}
+				else if((actor.getScreenX() > (getScreenWidth() - (actor.getWidth()))))
+				{
+					actor.setX(((getScreenWidth() - (actor.getWidth())) - 1));
+				}
+			}
+		});
+		
 		/* =========================== Keyboard =========================== */
 		addKeyStateListener("action2", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled && pressed)
 			{
 				createRecycledActor(getActorType(0), actor.getX(), actor.getY(), Script.FRONT);
-				getLastCreatedActor().applyImpulse(, , 40);
-			}
-		});
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((actor.getX() < 0))
+				if((actor.getAnimation() == "walking right"))
 				{
-					actor.setX(10);
+					getLastCreatedActor().applyImpulseInDirection(0, 35);
 				}
-				else if((actor.getX() > 600))
+				if((actor.getAnimation() == "walking left"))
 				{
-					actor.setX(600);
+					getLastCreatedActor().applyImpulseInDirection(180, 35);
+				}
+				if((actor.getAnimation() == "walking up "))
+				{
+					getLastCreatedActor().applyImpulseInDirection(270, 35);
+				}
+				if((actor.getAnimation() == "walking down"))
+				{
+					getLastCreatedActor().applyImpulseInDirection(90, 35);
 				}
 			}
 		});
