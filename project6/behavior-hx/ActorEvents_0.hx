@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_6 extends ActorScript
+class ActorEvents_0 extends ActorScript
 {
 	
 	
@@ -81,6 +81,16 @@ class ActorEvents_6 extends ActorScript
 	
 	override public function init()
 	{
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				Engine.engine.setGameAttribute("Hero x position", actor.getX());
+				Engine.engine.setGameAttribute("Hero y position", actor.getY());
+			}
+		});
 		
 	}
 	

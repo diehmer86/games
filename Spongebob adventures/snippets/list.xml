@@ -14,15 +14,27 @@
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="6" name="step" order="2" repeats="true"/>
-            <event displayName="Updating" enabled="false" id="7" name="step" order="5" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="8" name="event-key-press-release" order="4" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="9" name="step" order="3" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="7" name="step" order="7" repeats="true"/>
+            <event displayName="Keyboard" enabled="true" id="8" name="event-key-press-release" order="6" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="9" name="step" order="4" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="10" name="step" order="5" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="11" name="collide" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="6" attachedevent="true" class="scripts.ActorEvents_6" classname="scripts.ActorEvents_6" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_6" oid="-1" package="scripts." shared="false" type="actor">
+        <text default="" defaultValue="" desc="" dropdown="" fullname="current direction" hidden="false" id="1" name="_currentdirection" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="spongebob Y" hidden="false" id="2" name="_spongebobY" order="1"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="spongebob X" hidden="false" id="3" name="_spongebobX" order="2"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="kill" hidden="false" id="4" name="_kill" order="3"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="spongebob" hidden="false" id="5" name="_spongebob" order="4"/>
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="6" repeats="true"/>
+            <event displayName="Actor - Actor" enabled="true" id="3" name="event-collide-actortoactor" order="2" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="4" name="collide" order="4" repeats="true"/>
+            <event displayName="Actor - Actor" enabled="true" id="5" name="event-collide-actortoactor" order="5" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="6" name="event-collide-actortotype" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="8" attachedevent="true" class="scripts.ActorEvents_8" classname="scripts.ActorEvents_8" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="4" name="ActorEvents_8" oid="-1" package="scripts." shared="false" type="actor">

@@ -8,7 +8,7 @@
                         <set-dxy comment="false" x="37" y="73">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="-10"/>
+                            <int id="2" val="-20"/>
                         </set-dxy>
                         <setanim comment="false" x="37" y="100">
                             <ACTOR eid="this" id="0"/>
@@ -28,7 +28,7 @@
                         <set-dxy comment="false" x="37" y="192">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="10"/>
+                            <int id="2" val="20"/>
                         </set-dxy>
                         <setanim comment="false" x="37" y="219">
                             <ACTOR eid="this" id="0"/>
@@ -81,7 +81,7 @@
                         <set-dxy comment="false" x="37" y="508">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="1"/>
-                            <int id="2" val="-10"/>
+                            <int id="2" val="-20"/>
                         </set-dxy>
                         <setanim comment="false" x="37" y="535">
                             <ACTOR eid="this" id="0"/>
@@ -101,7 +101,7 @@
                         <set-dxy comment="false" x="37" y="627">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="1"/>
-                            <int id="2" val="10"/>
+                            <int id="2" val="20"/>
                         </set-dxy>
                         <setanim comment="false" x="37" y="654">
                             <ACTOR eid="this" id="0"/>
@@ -349,5 +349,39 @@
             <ACTOR eid="this" id="0"/>
             <int id="1" val="4"/>
         </get-xy>
+    </group>
+    <group eventID="10" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <set-game-val-0 comment="false" x="26" y="40">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-game-val-0>
+                <set-game-val-1 comment="false" x="26" y="73">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-game-val-1>
+            </group>
+        </step>
+    </group>
+    <group eventID="10" id="-1"/>
+    <group eventID="11" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="11" id="-1"/>
+        </collide>
+    </group>
+    <group eventID="11" id="1">
+        <if comment="false" x="936" y="243">
+            <group eventID="11" id="-1"/>
+            <int id="0" val=""/>
+        </if>
+    </group>
+    <group eventID="11" id="-1">
+        <other-actor comment="false" x="393" y="109"/>
+        <this-actor comment="false" x="256" y="108"/>
     </group>
 </groups>
