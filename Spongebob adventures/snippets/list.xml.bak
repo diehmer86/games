@@ -47,6 +47,8 @@
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
             <event displayName="Updating" enabled="true" id="3" name="step" order="3" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="4" name="step" order="4" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="5" name="draw" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_6_6_2WayHorizontalMovement" classname="scripts.Design_6_6_2WayHorizontalMovement" desc="Allows the actor to move left and right." description="Allows the actor to move left and right." design="true" drawOrder="0" id="6" name="2 Way Horizontal Movement" oid="-1" package="scripts" shared="false" type="actor">

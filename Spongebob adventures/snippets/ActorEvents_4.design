@@ -338,12 +338,6 @@
             </group>
         </step>
     </group>
-    <group eventID="9" id="1">
-        <eq comment="false" x="312" y="421">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </eq>
-    </group>
     <group eventID="9" id="-1">
         <get-xy comment="false" x="180" y="371">
             <ACTOR eid="this" id="0"/>
@@ -381,7 +375,7 @@
         </if>
     </group>
     <group eventID="11" id="-1">
-        <other-actor comment="false" x="393" y="109"/>
         <this-actor comment="false" x="256" y="108"/>
+        <other-actor comment="false" x="393" y="109"/>
     </group>
 </groups>
