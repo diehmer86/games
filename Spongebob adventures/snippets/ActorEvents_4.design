@@ -369,13 +369,42 @@
         </collide>
     </group>
     <group eventID="11" id="1">
-        <if comment="false" x="936" y="243">
-            <group eventID="11" id="-1"/>
-            <int id="0" val=""/>
-        </if>
+        <die comment="false" x="97" y="122">
+            <ACTOR eid="lastcollided" id="0"/>
+        </die>
     </group>
     <group eventID="11" id="-1">
-        <this-actor comment="false" x="256" y="108"/>
         <other-actor comment="false" x="393" y="109"/>
+        <this-actor comment="false" x="256" y="108"/>
     </group>
+    <group eventID="12" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="12" id="-1">
+                        <draw-text comment="false" x="37" y="78">
+                            <int id="0" val="you lose"/>
+                            <int id="1" val="400"/>
+                            <int id="2" val="250"/>
+                        </draw-text>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <isalive comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </isalive>
+                        <false comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="12" id="1">
+        <eq comment="false" x="192" y="132">
+            <isalive comment="false" id="0" x="0" y="0">
+                <ACTOR eid="lastcreated" id="0"/>
+            </isalive>
+            <false comment="false" id="1" x="0" y="0"/>
+        </eq>
+    </group>
+    <group eventID="12" id="-1"/>
 </groups>
