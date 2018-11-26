@@ -69,13 +69,11 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_6 extends ActorScript
+class ActorEvents_4 extends ActorScript
 {
 	public var _currentdirection:String;
-	public var _spongebobY:Float;
-	public var _spongebobX:Float;
-	public var _kill:Actor;
-	public var _spongebob:Actor;
+	public var _DIRECTIONOFMONSTER:String;
+	public var _directionofmonster:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -83,61 +81,84 @@ class ActorEvents_6 extends ActorScript
 		super(actor);
 		nameMap.set("current direction", "_currentdirection");
 		_currentdirection = "";
-		nameMap.set("spongebob Y", "_spongebobY");
-		_spongebobY = 0.0;
-		nameMap.set("spongebob X", "_spongebobX");
-		_spongebobX = 0.0;
-		nameMap.set("kill", "_kill");
-		nameMap.set("spongebob", "_spongebob");
+		nameMap.set("DIRECTION OF MONSTER", "_DIRECTIONOFMONSTER");
+		_DIRECTIONOFMONSTER = "";
+		nameMap.set("direction of monster", "_directionofmonster");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		
-		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				actor.applyImpulse((Engine.engine.getGameAttribute("spongebob x") - actor.getX()), (Engine.engine.getGameAttribute("spongebob y") - actor.getY()), .1);
+				if(isKeyDown("left"))
+				{
+					actor.setXVelocity(-20);
+					actor.setAnimation("" + "walking left");
+					_currentdirection = "left";
+					propertyChanged("_currentdirection", _currentdirection);
+				}
+				else if(isKeyDown("right"))
+				{
+					actor.setXVelocity(20);
+					actor.setAnimation("" + "walking right");
+					_currentdirection = "right";
+					propertyChanged("_currentdirection", _currentdirection);
+				}
+				else
+				{
+					actor.setXVelocity(0);
+					if((_currentdirection == "left"))
+					{
+						actor.setAnimation("" + "idle left");
+					}
+					else if((_currentdirection == "right"))
+					{
+						actor.setAnimation("" + "idle right");
+					}
+				}
+				if(isKeyDown("up"))
+				{
+					actor.setYVelocity(-20);
+					actor.setAnimation("" + "walking up");
+					_currentdirection = "up";
+					propertyChanged("_currentdirection", _currentdirection);
+				}
+				else if(isKeyDown("down"))
+				{
+					actor.setYVelocity(20);
+					actor.setAnimation("" + "walking down");
+					_currentdirection = "down";
+					propertyChanged("_currentdirection", _currentdirection);
+				}
+				else
+				{
+					actor.setYVelocity(0);
+					if((_currentdirection == "up"))
+					{
+						actor.setAnimation("" + "idle up");
+					}
+					else if((_currentdirection == "down"))
+					{
+						actor.setAnimation("" + "idle down");
+					}
+				}
 			}
 		});
 		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((actor.getScreenX() < 0))
+				if((actor.isAlive() == false))
 				{
-					actor.setX(1);
+					g.drawString("" + "you lose", 400, 250);
 				}
-				else if((actor.getScreenX() > (getScreenWidth() - (actor.getWidth()))))
-				{
-					actor.setX(((getScreenWidth() - (actor.getWidth())) - 1));
-				}
-			}
-		});
-		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && sameAsAny(getActorType(0), event.otherActor.getType(),event.otherActor.getGroup()))
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ======================== Something Else ======================== */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(event.otherActor);
 			}
 		});
 		
@@ -178,9 +199,32 @@ class ActorEvents_6 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				if((actor.getScreenY() > (getScreenHeight() - (actor.getWidth()))))
+				Engine.engine.setGameAttribute("spongebob x", actor.getX());
+				Engine.engine.setGameAttribute("spongebob y", actor.getY());
+			}
+		});
+		
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("action2", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && pressed)
+			{
+				createRecycledActor(getActorType(0), actor.getX(), actor.getY(), Script.FRONT);
+				if((actor.getAnimation() == "walking right"))
 				{
-					actor.setY(((getScreenHeight() - (actor.getWidth())) - 1));
+					getLastCreatedActor().applyImpulseInDirection(0, 35);
+				}
+				if((actor.getAnimation() == "walking left"))
+				{
+					getLastCreatedActor().applyImpulseInDirection(180, 35);
+				}
+				if((actor.getAnimation() == "walking up"))
+				{
+					getLastCreatedActor().applyImpulseInDirection(270, 35);
+				}
+				if((actor.getAnimation() == "walking down"))
+				{
+					getLastCreatedActor().applyImpulseInDirection(90, 35);
 				}
 			}
 		});

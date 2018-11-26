@@ -122,7 +122,7 @@
             </group>
         </draw>
     </group>
-    <group eventID="5" id="4">
+    <group eventID="5" id="1">
         <draw-text comment="false" x="78" y="205">
             <get-val-3-2 comment="false" id="0" x="0" y="0"/>
             <int id="1" val="100"/>

@@ -72,20 +72,11 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class SceneEvents_0 extends SceneScript
 {
-	public var _shipspeed:Float;
-	public var _VictoryCounter:Float;
-	public var _Win:Bool;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
-		nameMap.set("ship speed", "_shipspeed");
-		_shipspeed = 20.0;
-		nameMap.set("Victory Counter", "_VictoryCounter");
-		_VictoryCounter = 0.0;
-		nameMap.set("Win?", "_Win");
-		_Win = false;
 		
 	}
 	
@@ -93,40 +84,21 @@ class SceneEvents_0 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		playSound(getSound(8));
-		
-		/* ======================= Member of Group ======================== */
-		addWhenTypeGroupKilledListener(getActorGroup(4), function(eventActor:Actor, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				_VictoryCounter += 1;
-				propertyChanged("_VictoryCounter", _VictoryCounter);
-			}
-		});
+		createRecycledActor(getActorType(4), 9, 302, Script.FRONT);
+		createRecycledActor(getActorType(6), 638, 226, Script.FRONT);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((_VictoryCounter == 4))
+				if((getLastCreatedActor().getScreenX() < 0))
 				{
-					_Win = true;
-					propertyChanged("_Win", _Win);
+					getLastCreatedActor().setX(1);
 				}
-			}
-		});
-		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				g.setFont(getFont(9));
-				if(_Win)
+				else if((getLastCreatedActor().getScreenX() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
 				{
-					g.drawString("" + "You Win!", 350, 214);
+					getLastCreatedActor().setX(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
 				}
 			}
 		});

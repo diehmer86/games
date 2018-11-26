@@ -16,7 +16,7 @@
         </step>
     </group>
     <group eventID="1" id="1">
-        <draw-text comment="false" x="66" y="231">
+        <draw-text comment="false" x="45" y="197">
             <int id="0" val="you lose"/>
             <int id="1" val="311"/>
             <int id="2" val="202"/>
