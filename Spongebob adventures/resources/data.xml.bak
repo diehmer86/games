@@ -8,7 +8,7 @@
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="384" id="11" name="bikini bottom" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="680" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="11" name="bikini bottom" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="0" fixedrot="true" fric="0.2" gid="4" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fire ball" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
         <snippets/>
     </actor>
@@ -94,7 +94,7 @@
             <poly data="4,0,0,120,0,120,120,0,120" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="355" id="16" name="spongebob house" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="474" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="355" id="16" name="spongebob house" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="474" xpf="1.0" ypf="1.0"/>
     <tileset across="1" atlasID="0" desc="" down="1" id="12" name="wall" oid="-1" shared="false" th="32" tw="32">
         <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
     </tileset>
