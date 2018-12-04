@@ -70,7 +70,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_1 extends SceneScript
+class SceneEvents_2 extends SceneScript
 {
 	
 	
@@ -91,6 +91,7 @@ class SceneEvents_1 extends SceneScript
 				createRecycledActor(getActorType(4), 9, 302, Script.FRONT);
 				createRecycledActor(getActorType(6), 638, 226, Script.FRONT);
 				createRecycledActor(getActorType(13), 500, 226, Script.FRONT);
+				createRecycledActor(getActorType(17), 510, 226, Script.FRONT);
 			}
 		});
 		

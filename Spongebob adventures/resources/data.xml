@@ -8,7 +8,8 @@
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="11" name="bikini bottom" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="20" name="bbb" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="800" id="19" name="bikini bottom" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="0" fixedrot="true" fric="0.2" gid="4" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fire ball" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
         <snippets/>
     </actor>
@@ -54,6 +55,28 @@
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <tileset across="3" atlasID="0" desc="" down="3" id="24" name="sceem 1" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="7" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="8" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="3" data="" durations="100" frames="3" id="3" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="4" id="4" order="-1"/>
+        <tile collision="4" data="" durations="100" frames="5" id="5" order="-1"/>
+        <tile collision="5" data="" durations="100" frames="6" id="6" order="-1"/>
+        <tile collision="2" data="" durations="100" frames="7" id="7" order="-1"/>
+        <tile collision="6" data="" durations="100" frames="8" id="8" order="-1"/>
+    </tileset>
+    <tileset across="3" atlasID="0" desc="" down="3" id="23" name="scene 1 tiles" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="3" id="3" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="4" id="4" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="5" id="5" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="6" id="6" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="7" id="7" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="8" id="8" order="-1"/>
+    </tileset>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="0" id="4" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="spongebob" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="5" static="false">
         <snippets>
             <s enabled="true" id="6">
@@ -98,4 +121,5 @@
     <tileset across="1" atlasID="0" desc="" down="1" id="12" name="wall" oid="-1" shared="false" th="32" tw="32">
         <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
     </tileset>
+    <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="21" name="yyi" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
 </pack>

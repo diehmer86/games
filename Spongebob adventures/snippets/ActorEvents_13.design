@@ -122,9 +122,9 @@
     </group>
     <group eventID="6" id="-1"/>
     <group eventID="7" id="0">
-        <event-collide-actortotype comment="false" x="15" y="15">
+        <event-collide-actortotype comment="false" x="27" y="32">
             <group eventID="7" id="-1">
-                <die comment="false" x="26" y="47">
+                <die comment="false" x="38" y="64">
                     <other-actor comment="false" id="0" x="0" y="0"/>
                 </die>
             </group>
