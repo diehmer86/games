@@ -5,7 +5,7 @@
             <group eventID="1" id="-1">
                 <push-shove comment="false" x="26" y="40">
                     <ACTOR eid="this" id="0"/>
-                    <int id="1" val="1"/>
+                    <int id="1" val="0"/>
                     <minus comment="false" id="2" x="0" y="0">
                         <get-game-val-0 comment="false" id="0" x="0" y="0"/>
                         <get-xy comment="false" id="1" x="0" y="0">
@@ -56,7 +56,7 @@
             <ACTOR eid="var" id="1" vid="5"/>
         </event-collide-actortoactor>
     </group>
-    <group eventID="3" id="2">
+    <group eventID="3" id="1">
         <get-val-3-4 comment="false" x="513" y="193"/>
     </group>
     <group eventID="3" id="-1"/>

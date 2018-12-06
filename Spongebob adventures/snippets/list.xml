@@ -34,7 +34,7 @@
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
             <event displayName="Created" enabled="true" id="2" name="init" order="7" repeats="true"/>
             <event displayName="Actor - Actor" enabled="true" id="3" name="event-collide-actortoactor" order="2" repeats="true"/>
-            <event displayName="Actor - Any" enabled="true" id="4" name="collide" order="5" repeats="false"/>
+            <event displayName="Actor - Any" enabled="false" id="4" name="collide" order="5" repeats="false"/>
             <event displayName="Actor - Actor" enabled="true" id="5" name="event-collide-actortoactor" order="6" repeats="true"/>
             <event displayName="Actor - Type" enabled="true" id="6" name="event-collide-actortotype" order="4" repeats="false"/>
             <event displayName="Updating" enabled="true" id="7" name="step" order="3" repeats="true"/>
@@ -49,13 +49,16 @@
         <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="5" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <control default="" defaultValue="" desc="" dropdown="" fullname="monster dies" hidden="false" id="1" name="_monsterdies" order="0"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="monster" hidden="false" id="2" name="_monster" order="1"/>
         <blocks/>
         <events>
             <event displayName="Updating" enabled="false" id="1" name="step" order="1" repeats="true"/>
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
             <event displayName="Updating" enabled="true" id="3" name="step" order="3" repeats="true"/>
-            <event displayName="Updating" enabled="false" id="4" name="step" order="4" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="5" name="draw" order="5" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="4" name="step" order="5" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="5" name="draw" order="6" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="6" name="step" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_6_6_2WayHorizontalMovement" classname="scripts.Design_6_6_2WayHorizontalMovement" desc="Allows the actor to move left and right." description="Allows the actor to move left and right." design="true" drawOrder="0" id="6" name="2 Way Horizontal Movement" oid="-1" package="scripts" shared="false" type="actor">

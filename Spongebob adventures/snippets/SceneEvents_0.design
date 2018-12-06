@@ -22,6 +22,13 @@
             <int id="2" val="202"/>
         </draw-text>
     </group>
+    <group eventID="1" id="2">
+        <scene-change-through comment="false" x="528" y="239">
+            <scene id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="1"/>
+        </scene-change-through>
+    </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
@@ -171,4 +178,32 @@
         </if>
     </group>
     <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <step comment="false" x="90" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="101" y="40">
+                    <group eventID="6" id="-1">
+                        <scene-change-through comment="false" x="112" y="78">
+                            <scene eid="1" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="10"/>
+                        </scene-change-through>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <isalive comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </isalive>
+                        <false comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="6" id="5">
+        <get-val-5-1 comment="false" x="438" y="259"/>
+    </group>
+    <group eventID="6" id="-1">
+        <get-val-5-2 comment="false" x="218" y="323"/>
+        <get-val-5-1 comment="false" x="106" y="164"/>
+    </group>
 </groups>
