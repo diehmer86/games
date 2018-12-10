@@ -23,7 +23,7 @@
                 </create-actor3>
                 <create-actor3 comment="false" x="26" y="121">
                     <actortype eid="17" id="0"/>
-                    <int id="1" val="510"/>
+                    <int id="1" val="490"/>
                     <int id="2" val="226"/>
                     <int id="3" val="0"/>
                 </create-actor3>
@@ -31,4 +31,26 @@
         </step>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <draw-text comment="false" x="37" y="78">
+                            <int id="0" val="you lose"/>
+                            <int id="1" val="400"/>
+                            <int id="2" val="250"/>
+                        </draw-text>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <isalive comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </isalive>
+                        <false comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>

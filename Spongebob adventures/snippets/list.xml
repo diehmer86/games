@@ -108,6 +108,7 @@
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="17" attachedevent="true" class="scripts.ActorEvents_17" classname="scripts.ActorEvents_17" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_17" oid="-1" package="scripts." shared="false" type="actor">
