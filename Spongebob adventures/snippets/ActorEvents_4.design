@@ -374,8 +374,8 @@
         </die>
     </group>
     <group eventID="11" id="-1">
-        <this-actor comment="false" x="256" y="108"/>
         <other-actor comment="false" x="393" y="109"/>
+        <this-actor comment="false" x="256" y="108"/>
     </group>
     <group eventID="12" id="0">
         <draw comment="false" x="15" y="15">
