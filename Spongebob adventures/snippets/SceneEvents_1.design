@@ -21,6 +21,12 @@
                     <int id="2" val="226"/>
                     <int id="3" val="0"/>
                 </create-actor3>
+                <create-actor3 comment="false" x="26" y="121">
+                    <actortype eid="17" id="0"/>
+                    <int id="1" val="505"/>
+                    <int id="2" val="230"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
             </group>
         </step>
     </group>
@@ -61,11 +67,30 @@
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <event-type-region comment="false" x="15" y="15">
-            <group eventID="4" id="-1"/>
+            <group eventID="4" id="-1">
+                <scene-change-through comment="false" x="26" y="47">
+                    <scene eid="2" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0.5"/>
+                </scene-change-through>
+            </group>
             <int id="0" val="0"/>
-            <REGION eid="lastcreated" id="1"/>
-            <actortype id="2"/>
+            <REGION eid="1" id="1"/>
+            <actortype eid="4" id="2"/>
         </event-type-region>
+    </group>
+    <group eventID="4" id="1">
+        <region comment="false" x="777" y="260">
+            <REGION eid="lastcreated" id="0"/>
+        </region>
+    </group>
+    <group eventID="4" id="2">
+        <create-region comment="false" x="650" y="405">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+            <int id="3" val=""/>
+        </create-region>
     </group>
     <group eventID="4" id="-1"/>
 </groups>
