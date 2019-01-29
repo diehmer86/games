@@ -125,14 +125,16 @@
         <event-collide-actortotype comment="false" x="27" y="32">
             <group eventID="7" id="-1">
                 <die comment="false" x="38" y="64">
-                    <other-actor comment="false" id="0" x="0" y="0"/>
+                    <ACTOR eid="lastcollided" id="0"/>
                 </die>
             </group>
             <ACTOR eid="this" id="0"/>
             <actortype eid="4" id="1"/>
         </event-collide-actortotype>
     </group>
-    <group eventID="7" id="-1"/>
+    <group eventID="7" id="-1">
+        <other-actor comment="false" x="88" y="122"/>
+    </group>
     <group eventID="8" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="8" id="-1">

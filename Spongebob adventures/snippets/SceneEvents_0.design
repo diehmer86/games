@@ -15,40 +15,26 @@
             </group>
         </step>
     </group>
-    <group eventID="1" id="1">
-        <draw-text comment="false" x="45" y="197">
-            <int id="0" val="you lose"/>
-            <int id="1" val="311"/>
-            <int id="2" val="202"/>
-        </draw-text>
-    </group>
-    <group eventID="1" id="2">
-        <scene-change-through comment="false" x="528" y="239">
-            <scene id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="1"/>
-        </scene-change-through>
-    </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <create-actor3 comment="false" x="26" y="40">
                     <actortype eid="4" id="0"/>
-                    <int id="1" val="29"/>
-                    <int id="2" val="301"/>
+                    <int id="1" val="40"/>
+                    <int id="2" val="430"/>
                     <int id="3" val="0"/>
                 </create-actor3>
                 <create-actor3 comment="false" x="26" y="67">
                     <actortype eid="6" id="0"/>
-                    <int id="1" val="638"/>
-                    <int id="2" val="226"/>
+                    <int id="1" val="613"/>
+                    <int id="2" val="30"/>
                     <int id="3" val="0"/>
                 </create-actor3>
                 <create-actor3 comment="false" x="26" y="94">
                     <actortype eid="13" id="0"/>
-                    <int id="1" val="500"/>
-                    <int id="2" val="226"/>
+                    <int id="1" val="496"/>
+                    <int id="2" val="49"/>
                     <int id="3" val="0"/>
                 </create-actor3>
             </group>
@@ -227,14 +213,6 @@
             </group>
         </draw>
     </group>
-    <group eventID="5" id="1">
-        <create-region comment="false" x="298" y="388">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-            <int id="2" val=""/>
-            <int id="3" val=""/>
-        </create-region>
-    </group>
     <group eventID="5" id="-1"/>
     <group eventID="6" id="0">
         <step comment="false" x="90" y="15">
@@ -265,9 +243,9 @@
         </eq>
     </group>
     <group eventID="7" id="0">
-        <event-type-region comment="false" x="15" y="15">
+        <event-type-region comment="false" x="54" y="45">
             <group eventID="7" id="-1">
-                <scene-change-through comment="false" x="26" y="47">
+                <scene-change-through comment="false" x="65" y="77">
                     <scene eid="1" id="0"/>
                     <int id="1" val="0"/>
                     <int id="2" val="1.01"/>
@@ -278,10 +256,17 @@
             <actortype eid="4" id="2"/>
         </event-type-region>
     </group>
-    <group eventID="7" id="1">
-        <region comment="false" x="472" y="264">
-            <REGION eid="0" id="0"/>
-        </region>
-    </group>
     <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="8" id="-1"/>
+        </step>
+    </group>
+    <group eventID="8" id="1">
+        <if comment="false" x="961" y="184">
+            <group eventID="8" id="-1"/>
+            <int id="0" val=""/>
+        </if>
+    </group>
+    <group eventID="8" id="-1"/>
 </groups>

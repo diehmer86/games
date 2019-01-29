@@ -95,6 +95,30 @@ class SceneEvents_2 extends SceneScript
 			}
 		});
 		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((getLastCreatedActor().getScreenX() < 0))
+				{
+					getLastCreatedActor().setX(1);
+				}
+				else if((getLastCreatedActor().getScreenX() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
+				{
+					getLastCreatedActor().setX(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
+				}
+				if((getLastCreatedActor().getScreenY() < 0))
+				{
+					getLastCreatedActor().setY(1);
+				}
+				else if((getLastCreatedActor().getScreenY() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
+				{
+					getLastCreatedActor().setY(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
+				}
+			}
+		});
+		
 		/* ========================= When Drawing ========================= */
 		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{
