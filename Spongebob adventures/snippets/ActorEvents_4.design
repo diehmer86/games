@@ -367,7 +367,7 @@
         <collide comment="false" x="15" y="15">
             <group eventID="11" id="-1">
                 <die comment="false" x="26" y="45">
-                    <ACTOR eid="lastcollided" id="0"/>
+                    <other-actor comment="false" id="0" x="0" y="0"/>
                 </die>
             </group>
         </collide>
@@ -379,8 +379,9 @@
         </play-sound4>
     </group>
     <group eventID="11" id="-1">
-        <other-actor comment="false" x="393" y="109"/>
+        <this-actor comment="false" x="37" y="102"/>
         <this-actor comment="false" x="256" y="108"/>
+        <other-actor comment="false" x="393" y="109"/>
     </group>
     <group eventID="12" id="0">
         <draw comment="false" x="15" y="15">
