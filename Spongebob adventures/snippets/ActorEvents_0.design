@@ -40,4 +40,32 @@
         </die>
     </group>
     <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-collide-actortotype comment="false" x="1" y="22">
+            <group eventID="1" id="-1">
+                <die comment="false" x="12" y="54">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="13" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="4" id="-1">
+        <collide-actor-of-type comment="false" x="339" y="29"/>
+    </group>
+    <group eventID="5" id="0">
+        <event-collide-actortotype comment="false" x="1" y="22">
+            <group eventID="1" id="-1">
+                <die comment="false" x="12" y="54">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="17" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="5" id="-1">
+        <collide-actor-of-type comment="false" x="339" y="29"/>
+    </group>
 </groups>

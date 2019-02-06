@@ -2,27 +2,28 @@
 <groups>
     <group eventID="1" id="0">
         <step comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <create-actor3 comment="false" x="26" y="40">
-                    <actortype eid="4" id="0"/>
-                    <int id="1" val="9"/>
-                    <int id="2" val="302"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
-                <create-actor3 comment="false" x="26" y="67">
-                    <actortype eid="6" id="0"/>
-                    <int id="1" val="638"/>
-                    <int id="2" val="226"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
-                <create-actor3 comment="false" x="26" y="94">
-                    <actortype eid="13" id="0"/>
-                    <int id="1" val="500"/>
-                    <int id="2" val="226"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
-            </group>
+            <group eventID="1" id="-1"/>
         </step>
+    </group>
+    <group eventID="1" id="1">
+        <create-actor3 comment="false" x="269" y="94">
+            <actortype eid="4" id="0"/>
+            <int id="1" val="9"/>
+            <int id="2" val="302"/>
+            <int id="3" val="0"/>
+        </create-actor3>
+        <create-actor3 comment="false" x="269" y="121">
+            <actortype eid="6" id="0"/>
+            <int id="1" val="638"/>
+            <int id="2" val="226"/>
+            <int id="3" val="0"/>
+        </create-actor3>
+        <create-actor3 comment="false" x="269" y="148">
+            <actortype eid="13" id="0"/>
+            <int id="1" val="500"/>
+            <int id="2" val="226"/>
+            <int id="3" val="0"/>
+        </create-actor3>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
@@ -190,7 +191,7 @@
             <group eventID="6" id="-1">
                 <scene-change-through comment="false" x="26" y="42">
                     <scene eid="2" id="0"/>
-                    <int id="1" val="0"/>
+                    <int id="1" val="2"/>
                     <int id="2" val="1.01"/>
                 </scene-change-through>
             </group>
@@ -200,4 +201,29 @@
         </event-actor-region>
     </group>
     <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <actortype eid="4" id="0"/>
+                    <int id="1" val="9"/>
+                    <int id="2" val="302"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <create-actor3 comment="false" x="26" y="67">
+                    <actortype eid="6" id="0"/>
+                    <int id="1" val="638"/>
+                    <int id="2" val="226"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <create-actor3 comment="false" x="26" y="94">
+                    <actortype eid="13" id="0"/>
+                    <int id="1" val="500"/>
+                    <int id="2" val="226"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+            </group>
+        </init>
+    </group>
+    <group eventID="7" id="-1"/>
 </groups>
