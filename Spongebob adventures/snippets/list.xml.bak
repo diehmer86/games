@@ -4,10 +4,11 @@
         <blocks/>
         <events>
             <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
-            <event displayName="Enters Screen" enabled="false" id="2" name="event-actor-screen" order="6" repeats="true"/>
-            <event displayName="Actor - Actor" enabled="false" id="3" name="event-collide-actortoactor" order="4" repeats="true"/>
+            <event displayName="Enters Screen" enabled="false" id="2" name="event-actor-screen" order="7" repeats="true"/>
+            <event displayName="Actor - Actor" enabled="false" id="3" name="event-collide-actortoactor" order="5" repeats="true"/>
             <event displayName="Actor - Type Copy" enabled="true" id="4" name="event-collide-actortotype" order="2" repeats="true"/>
-            <event displayName="Actor - Type Copy Copy" enabled="true" id="5" name="event-collide-actortotype" order="3" repeats="true"/>
+            <event displayName="Actor - Type Copy Copy" enabled="true" id="5" name="event-collide-actortotype" order="4" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="6" name="collide" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="4" attachedevent="true" class="scripts.ActorEvents_4" classname="scripts.ActorEvents_4" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" name="ActorEvents_4" oid="-1" package="scripts." shared="false" type="actor">
@@ -145,17 +146,5 @@
             <event displayName="Actor Created" enabled="false" id="4" name="event-actor-create-kill" order="4" repeats="true"/>
             <event displayName="Actor - Type" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="true"/>
         </events>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_3" classname="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="11" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" shared="false" type="scene">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="12" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" shared="false" type="scene">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_5" classname="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="13" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" shared="false" type="scene">
-        <blocks/>
-        <events/>
     </snippet>
 </pack>
