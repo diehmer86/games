@@ -336,7 +336,7 @@
                     </eq>
                 </if>
             </group>
-            <control eid="5" id="0"/>
+            <control eid="4" id="0"/>
             <int id="1" val="0"/>
         </event-key-press-release>
     </group>
@@ -346,11 +346,11 @@
         </getdir>
     </group>
     <group eventID="9" id="0">
-        <step comment="false" x="7" y="47">
+        <step comment="false" x="20" y="6">
             <group eventID="9" id="-1">
-                <if comment="false" x="18" y="72">
+                <if comment="false" x="31" y="31">
                     <group eventID="9" id="-1">
-                        <set-xy comment="false" x="29" y="110">
+                        <set-xy comment="false" x="42" y="69">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="1"/>
@@ -364,9 +364,9 @@
                         <int id="1" val="0"/>
                     </less>
                 </if>
-                <else-if comment="false" x="18" y="149">
+                <else-if comment="false" x="31" y="108">
                     <group eventID="9" id="-1">
-                        <set-xy comment="false" x="29" y="192">
+                        <set-xy comment="false" x="42" y="151">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -443,9 +443,9 @@
         </play-sound4>
     </group>
     <group eventID="11" id="-1">
-        <other-actor comment="false" x="393" y="109"/>
-        <this-actor comment="false" x="256" y="108"/>
         <this-actor comment="false" x="37" y="102"/>
+        <this-actor comment="false" x="256" y="108"/>
+        <other-actor comment="false" x="393" y="109"/>
     </group>
     <group eventID="12" id="0">
         <draw comment="false" x="15" y="15">
