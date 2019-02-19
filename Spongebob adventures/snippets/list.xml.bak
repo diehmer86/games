@@ -37,23 +37,9 @@
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="Created" enabled="false" id="2" name="init" order="15" repeats="true"/>
-            <event displayName="Actor - Actor" enabled="false" id="3" name="event-collide-actortoactor" order="2" repeats="true"/>
-            <event displayName="Actor - Any" enabled="false" id="4" name="collide" order="13" repeats="false"/>
-            <event displayName="Actor - Actor" enabled="false" id="5" name="event-collide-actortoactor" order="14" repeats="true"/>
             <event displayName="Actor - Type" enabled="true" id="6" name="event-collide-actortotype" order="12" repeats="false"/>
-            <event displayName="Updating" enabled="true" id="7" name="step" order="11" repeats="false"/>
-            <event displayName="Drawing" enabled="false" id="8" name="draw" order="16" repeats="true"/>
             <event displayName="Updating" enabled="true" id="9" name="step" order="17" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="10" name="step" order="19" repeats="true"/>
             <event displayName="Updating" enabled="true" id="11" name="step" order="18" repeats="true"/>
-            <event displayName="Actor Created" enabled="false" id="12" name="event-actor-create-kill" order="3" repeats="true"/>
-            <event displayName="Actor - Actor" enabled="false" id="13" name="event-collide-actortoactor" order="4" repeats="true"/>
-            <event displayName="Actor Created" enabled="false" id="14" name="event-type-create-kill" order="5" repeats="true"/>
-            <event displayName="Actor Created" enabled="false" id="15" name="event-type-create-kill" order="6" repeats="true"/>
-            <event displayName="Enters Screen" enabled="false" id="16" name="event-type-screen" order="7" repeats="true"/>
-            <event displayName="Actor - Actor" enabled="false" id="17" name="event-collide-actortoactor" order="8" repeats="true"/>
-            <event displayName="Actor - Actor" enabled="false" id="18" name="event-collide-actortoactor" order="9" repeats="true"/>
             <event displayName="Type - Type" enabled="true" id="19" name="event-collide-typetotype" order="10" repeats="true"/>
         </events>
     </snippet>
@@ -146,6 +132,16 @@
             <event displayName="Actor - Any" enabled="false" id="3" name="collide" order="3" repeats="true"/>
             <event displayName="Actor Created" enabled="false" id="4" name="event-actor-create-kill" order="4" repeats="true"/>
             <event displayName="Actor - Type" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="31" attachedevent="true" class="scripts.ActorEvents_31" classname="scripts.ActorEvents_31" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="11" name="ActorEvents_31" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="3" name="event-collide-typetotype" order="3" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="4" name="event-collide-typetotype" order="4" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="5" name="step" order="5" repeats="true"/>
         </events>
     </snippet>
 </pack>

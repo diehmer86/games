@@ -71,6 +71,14 @@
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="11" fixedrot="false" fric="0.2" gid="3" id="31" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="monster 4" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="32" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="90" id="32" name="monster 4" shared="false" width="90">
+        <anim across="1" down="1" durations="100" height="90" id="0" loop="true" name="Animation 0" numframes="1" originx="45" originy="45" sync="false" version="2" width="90">
+            <poly data="4,0,0,90,0,90,90,0,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <tileset across="3" atlasID="0" desc="" down="3" id="24" name="sceem 1" oid="-1" shared="false" th="32" tw="32">
         <tile collision="7" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
@@ -160,6 +168,21 @@
     </sprite>
     <tileset across="1" atlasID="0" desc="" down="1" id="12" name="wall" oid="-1" shared="false" th="32" tw="32">
         <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
+    </tileset>
+    <tileset across="1" atlasID="0" desc="" down="1" id="35" name="winer" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
+    </tileset>
+    <tileset across="1" atlasID="0" desc="" down="1" id="33" name="winner" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
+    </tileset>
+    <tileset across="2" atlasID="0" desc="" down="2" id="36" name="Winner" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="3" id="3" order="-1"/>
+    </tileset>
+    <tileset across="1" atlasID="0" desc="" down="1" id="34" name="winnner" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
     </tileset>
     <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="21" name="yyi" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
 </pack>
