@@ -20,7 +20,7 @@
                             <int id="1" val="1"/>
                         </get-xy>
                     </minus>
-                    <int id="4" val=".1"/>
+                    <int id="4" val=".3"/>
                 </push-shove>
             </group>
         </step>
@@ -133,8 +133,8 @@
         </event-collide-actortotype>
     </group>
     <group eventID="7" id="-1">
-        <collide-actor-of-type comment="false" x="46" y="149"/>
         <other-actor comment="false" x="304" y="176"/>
+        <collide-actor-of-type comment="false" x="46" y="149"/>
     </group>
     <group eventID="8" id="0">
         <step comment="false" x="15" y="15">
