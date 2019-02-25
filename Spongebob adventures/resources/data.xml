@@ -141,24 +141,24 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="120" id="5" name="spongebob" shared="false" width="120">
-        <anim across="1" down="1" durations="100" height="120" id="0" loop="true" name="walking down" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="295" id="5" name="spongebob" shared="false" width="200">
+        <anim across="1" down="1" durations="100" height="295" id="0" loop="true" name="walking down" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
             <poly data="4,20,28,70,28,70,88,20,88" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="120" id="1" loop="true" name="walking right" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+        <anim across="1" down="1" durations="100" height="295" id="1" loop="true" name="walking right" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
             <poly data="4,14,5,34,5,34,35,14,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="120" id="2" loop="true" name="walking left" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+        <anim across="1" down="1" durations="100" height="295" id="2" loop="true" name="walking left" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
             <poly data="4,28,18,48,18,48,68,28,68" density="0.1" fric="0.2" gid="-1000" id="0" name="walking left" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="120" id="3" loop="true" name="idle right" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
-            <poly data="4,26,9,56,9,56,74,26,74" density="0.1" fric="0.2" gid="-1000" id="0" name="idle right" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="295" id="3" loop="true" name="idle right" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
+            <poly data="4,28,15,48,15,48,65,28,65" density="0.1" fric="0.2" gid="-1000" id="0" name="idle right" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="120" id="4" loop="true" name="idle left" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
-            <poly data="4,28,19,48,19,48,69,28,69" density="0.1" fric="0.2" gid="-1000" id="0" name="idle left" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="295" id="4" loop="true" name="idle left" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
+            <poly data="4,30,17,50,17,50,67,30,67" density="0.1" fric="0.2" gid="-1000" id="0" name="idle left" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="120" id="5" loop="true" name="walking up" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
-            <poly data="4,19,28,69,28,69,88,19,88" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="295" id="5" loop="true" name="walking up" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
+            <poly data="4,0,0,200,0,200,295,0,295" density="0.1" fric="0.2" gid="-1000" id="0" name="walking up" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <tileset across="1" atlasID="0" desc="" down="1" id="12" name="wall" oid="-1" shared="false" th="32" tw="32">

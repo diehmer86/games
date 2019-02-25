@@ -124,7 +124,7 @@
     <snippet actorid="17" attachedevent="true" class="scripts.ActorEvents_17" classname="scripts.ActorEvents_17" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_17" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="Actor - Actor" enabled="false" id="1" name="event-collide-actortoactor" order="1" repeats="true"/>
+            <event displayName="Actor - Actor" enabled="false" id="1" name="event-collide-actortoactor" order="1" repeats="false"/>
             <event displayName="Type - Type" enabled="true" id="2" name="event-collide-typetotype" order="2" repeats="true"/>
             <event displayName="Actor - Any" enabled="false" id="3" name="collide" order="3" repeats="true"/>
             <event displayName="Actor Created" enabled="false" id="4" name="event-actor-create-kill" order="4" repeats="true"/>
