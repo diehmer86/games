@@ -1,30 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="1" id="0">
-        <step comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <create-actor3 comment="false" x="26" y="40">
-                    <actortype eid="4" id="0"/>
-                    <int id="1" val="9"/>
-                    <int id="2" val="302"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
-                <create-actor3 comment="false" x="26" y="67">
-                    <actortype eid="6" id="0"/>
-                    <int id="1" val="638"/>
-                    <int id="2" val="226"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
-                <create-actor3 comment="false" x="26" y="94">
-                    <actortype eid="13" id="0"/>
-                    <int id="1" val="500"/>
-                    <int id="2" val="226"/>
-                    <int id="3" val="0"/>
-                </create-actor3>
-            </group>
-        </step>
-    </group>
-    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
@@ -59,23 +34,6 @@
         </event-type-screen>
     </group>
     <group eventID="3" id="-1"/>
-    <group eventID="4" id="0">
-        <event-type-region comment="false" x="50" y="80">
-            <group eventID="4" id="-1">
-                <scene-change-through comment="false" x="61" y="112">
-                    <scene eid="2" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="1.01"/>
-                </scene-change-through>
-            </group>
-            <int id="0" val="0"/>
-            <REGION eid="lastcreated" id="1"/>
-            <actortype id="2"/>
-        </event-type-region>
-    </group>
-    <group eventID="4" id="-1">
-        <actor-entered-exited comment="false" x="394" y="22"/>
-    </group>
     <group eventID="5" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="5" id="-1">

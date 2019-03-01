@@ -5,27 +5,13 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="32" id="14" name="2 monster" shared="false" width="32">
         <anim across="1" down="1" durations="100" height="32" id="0" loop="true" name="Animation 0" numframes="1" originx="16" originy="16" sync="false" version="2" width="32">
-            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,25,0,25,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="20" name="bbb" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="800" id="19" name="bikini bottom" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="800" xpf="1.0" ypf="1.0"/>
-    <tileset across="1" atlasID="0" desc="" down="1" id="28" name="door" oid="-1" shared="false" th="32" tw="32">
-        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
-    </tileset>
     <tileset across="1" atlasID="0" desc="" down="1" id="29" name="Door" oid="-1" shared="false" th="32" tw="32">
         <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
-    </tileset>
-    <tileset across="3" atlasID="0" desc="" down="3" id="30" name="final level" oid="-1" shared="false" th="32" tw="32">
-        <tile collision="7" data="" durations="100" frames="0" id="0" order="-1"/>
-        <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
-        <tile collision="8" data="" durations="100" frames="2" id="4" order="-1"/>
-        <tile collision="0" data="" durations="100" frames="3" id="2" order="-1"/>
-        <tile collision="0" data="" durations="100" frames="4" id="3" order="-1"/>
-        <tile collision="0" data="" durations="100" frames="5" id="5" order="-1"/>
-        <tile collision="5" data="" durations="100" frames="6" id="6" order="-1"/>
-        <tile collision="0" data="" durations="100" frames="7" id="7" order="-1"/>
-        <tile collision="6" data="" durations="100" frames="8" id="8" order="-1"/>
     </tileset>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="0" fixedrot="true" fric="0.2" gid="4" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="fire ball" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
         <snippets/>
@@ -43,16 +29,16 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="7" name="monster" shared="false" width="64">
         <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,8,6,38,6,38,56,8,56" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="64" id="1" loop="true" name="walking right" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+            <poly data="4,23,10,33,10,33,60,23,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="64" id="2" loop="true" name="walking left" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="walking left" rest="0.0" sensor="false"/>
+            <poly data="4,22,9,33,9,33,59,22,59" density="0.1" fric="0.2" gid="-1000" id="0" name="walking left" rest="0.0" sensor="false"/>
         </anim>
         <anim across="2" down="1" durations="100,100" height="64" id="3" loop="true" name="walking up" numframes="2" originx="32" originy="32" sync="false" version="2" width="128">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="walking up" rest="0.0" sensor="false"/>
+            <poly data="4,11,7,41,7,41,52,11,52" density="0.1" fric="0.2" gid="-1000" id="0" name="walking up" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="10" fixedrot="false" fric="0.2" gid="3" id="17" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="monster 3" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="18" static="false">
@@ -92,9 +78,6 @@
         <tile collision="0" data="" durations="100" frames="6" id="6" order="-1"/>
         <tile collision="0" data="" durations="100" frames="7" id="7" order="-1"/>
         <tile collision="0" data="" durations="100" frames="8" id="8" order="-1"/>
-    </tileset>
-    <tileset across="1" atlasID="0" desc="" down="1" id="25" name="scene 4" oid="-1" shared="false" th="32" tw="32">
-        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
     </tileset>
     <tileset across="3" atlasID="0" desc="" down="3" id="27" name="scene 5" oid="-1" shared="false" th="32" tw="32">
         <tile collision="7" data="" durations="100" frames="0" id="0" order="-1"/>
@@ -141,43 +124,25 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="295" id="5" name="spongebob" shared="false" width="200">
-        <anim across="1" down="1" durations="100" height="295" id="0" loop="true" name="walking down" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="120" id="5" name="spongebob" shared="false" width="120">
+        <anim across="1" down="1" durations="100" height="120" id="0" loop="true" name="walking down" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
             <poly data="4,20,28,70,28,70,88,20,88" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="295" id="1" loop="true" name="walking right" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
+        <anim across="1" down="1" durations="100" height="120" id="1" loop="true" name="walking right" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
             <poly data="4,14,5,34,5,34,35,14,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="295" id="2" loop="true" name="walking left" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
-            <poly data="4,28,18,48,18,48,68,28,68" density="0.1" fric="0.2" gid="-1000" id="0" name="walking left" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="120" id="2" loop="true" name="walking left" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,0,0,120,0,120,120,0,120" density="0.1" fric="0.2" gid="-1000" id="0" name="walking left" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="295" id="3" loop="true" name="idle right" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
+        <anim across="1" down="1" durations="100" height="120" id="3" loop="true" name="idle right" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
             <poly data="4,28,15,48,15,48,65,28,65" density="0.1" fric="0.2" gid="-1000" id="0" name="idle right" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="295" id="4" loop="true" name="idle left" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
-            <poly data="4,30,17,50,17,50,67,30,67" density="0.1" fric="0.2" gid="-1000" id="0" name="idle left" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="120" id="4" loop="true" name="idle left" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,0,0,120,0,120,120,0,120" density="0.1" fric="0.2" gid="-1000" id="0" name="idle left" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="295" id="5" loop="true" name="walking up" numframes="1" originx="100" originy="147" sync="false" version="2" width="200">
-            <poly data="4,0,0,200,0,200,295,0,295" density="0.1" fric="0.2" gid="-1000" id="0" name="walking up" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="120" id="5" loop="true" name="walking up" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,0,0,120,0,120,120,0,120" density="0.1" fric="0.2" gid="-1000" id="0" name="walking up" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <tileset across="1" atlasID="0" desc="" down="1" id="12" name="wall" oid="-1" shared="false" th="32" tw="32">
-        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
-    </tileset>
-    <tileset across="1" atlasID="0" desc="" down="1" id="35" name="winer" oid="-1" shared="false" th="32" tw="32">
-        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
-    </tileset>
-    <tileset across="1" atlasID="0" desc="" down="1" id="33" name="winner" oid="-1" shared="false" th="32" tw="32">
-        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
-    </tileset>
-    <tileset across="2" atlasID="0" desc="" down="2" id="36" name="Winner" oid="-1" shared="false" th="32" tw="32">
-        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
-        <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
-        <tile collision="0" data="" durations="100" frames="2" id="2" order="-1"/>
-        <tile collision="0" data="" durations="100" frames="3" id="3" order="-1"/>
-    </tileset>
-    <tileset across="1" atlasID="0" desc="" down="1" id="34" name="winnner" oid="-1" shared="false" th="32" tw="32">
-        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
-    </tileset>
     <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="21" name="yyi" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
 </pack>
