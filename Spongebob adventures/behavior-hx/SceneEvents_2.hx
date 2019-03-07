@@ -40,6 +40,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,25 +70,55 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_0 extends ActorScript
+class SceneEvents_2 extends SceneScript
 {
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
+		super();
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== Something Else ======================== */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================== When Creating ========================= */
+		createRecycledActor(getActorType(6), 638, 226, Script.FRONT);
+		createRecycledActor(getActorType(13), 500, 226, Script.FRONT);
+		createRecycledActor(getActorType(17), 490, 226, Script.FRONT);
+		createRecycledActor(getActorType(31), 500, 226, Script.FRONT);
+		
+		/* ======================== Specific Actor ======================== */
+		addActorEntersRegionListener(getRegion(0), function(a:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAs(getActor(1), a))
+			{
+				switchScene(GameModel.get().scenes.get(3).getID(), null, createSlideUpTransition(.5));
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				recycleActor(event.thisActor);
+				if((getLastCreatedActor().getScreenX() < 0))
+				{
+					getLastCreatedActor().setX(1);
+				}
+				else if((getLastCreatedActor().getScreenX() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
+				{
+					getLastCreatedActor().setX(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
+				}
+				if((getLastCreatedActor().getScreenY() < 0))
+				{
+					getLastCreatedActor().setY(1);
+				}
+				else if((getLastCreatedActor().getScreenY() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
+				{
+					getLastCreatedActor().setY(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
+				}
 			}
 		});
 		

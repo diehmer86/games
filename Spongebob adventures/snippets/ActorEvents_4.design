@@ -152,12 +152,7 @@
             </group>
         </step>
     </group>
-    <group eventID="6" id="-1">
-        <and comment="false" x="991" y="218">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </and>
-    </group>
+    <group eventID="6" id="-1"/>
     <group eventID="7" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="7" id="-1">
