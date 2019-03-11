@@ -240,15 +240,6 @@
         </step>
     </group>
     <group eventID="4" id="-1"/>
-    <group eventID="5" id="0">
-        <event-actor-region comment="false" x="15" y="15">
-            <group eventID="5" id="-1"/>
-            <int id="0" val="0"/>
-            <REGION eid="lastcreated" id="1"/>
-            <ACTOR eid="1" id="2"/>
-        </event-actor-region>
-    </group>
-    <group eventID="5" id="-1"/>
     <group eventID="6" id="0">
         <event-type-screen comment="false" x="15" y="15">
             <group eventID="3" id="-1"/>

@@ -153,7 +153,7 @@
                 </scene-change-through>
             </group>
             <int id="0" val="0"/>
-            <REGION eid="3" id="1"/>
+            <REGION eid="0" id="1"/>
             <ACTOR eid="1" id="2"/>
         </event-actor-region>
     </group>

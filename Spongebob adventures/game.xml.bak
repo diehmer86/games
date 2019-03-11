@@ -75,12 +75,12 @@
     </attcats>
     <props/>
     <attributes>
-        <number cid="-1" id="2" name="damge" save="true" value="0"/>
-        <number cid="-1" id="4" name="damage" save="true" value="0"/>
+        <number cid="-1" id="2" name="damge" save="true" value="0.0"/>
+        <number cid="-1" id="4" name="damage" save="true" value="0.0"/>
         <text cid="-1" id="5" name="health" save="true" value="0"/>
         <number cid="-1" id="1" name="spongebob y" save="true" value="0.0"/>
         <number cid="-1" id="0" name="spongebob x" save="true" value="0.0"/>
-        <number cid="-1" id="3" name="Damage" save="true" value="0"/>
+        <number cid="-1" id="3" name="Damage" save="true" value="0.0"/>
     </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>

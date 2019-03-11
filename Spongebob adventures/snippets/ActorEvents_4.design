@@ -213,7 +213,7 @@
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="0"/>
-                            <int id="3" val="35"/>
+                            <int id="3" val="100"/>
                         </push-shove2>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
@@ -229,7 +229,7 @@
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="180"/>
-                            <int id="3" val="35"/>
+                            <int id="3" val="100"/>
                         </push-shove2>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
@@ -245,7 +245,7 @@
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="270"/>
-                            <int id="3" val="35"/>
+                            <int id="3" val="100"/>
                         </push-shove2>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
@@ -261,7 +261,7 @@
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="90"/>
-                            <int id="3" val="35"/>
+                            <int id="3" val="100"/>
                         </push-shove2>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
@@ -277,7 +277,7 @@
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="180"/>
-                            <int id="3" val="35"/>
+                            <int id="3" val="100"/>
                         </push-shove2>
                         <if comment="false" x="37" y="455">
                             <group eventID="8" id="-1">
@@ -285,7 +285,7 @@
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="90"/>
-                                    <int id="3" val="35"/>
+                                    <int id="3" val="100"/>
                                 </push-shove2>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
@@ -301,7 +301,7 @@
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="90"/>
-                                    <int id="3" val="35"/>
+                                    <int id="3" val="100"/>
                                 </push-shove2>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
@@ -317,7 +317,7 @@
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="0"/>
-                                    <int id="3" val="35"/>
+                                    <int id="3" val="100"/>
                                 </push-shove2>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
@@ -443,9 +443,9 @@
         </play-sound4>
     </group>
     <group eventID="11" id="-1">
-        <other-actor comment="false" x="393" y="109"/>
-        <this-actor comment="false" x="256" y="108"/>
         <this-actor comment="false" x="37" y="102"/>
+        <this-actor comment="false" x="256" y="108"/>
+        <other-actor comment="false" x="393" y="109"/>
     </group>
     <group eventID="12" id="0">
         <draw comment="false" x="15" y="15">
@@ -467,14 +467,6 @@
                 </if>
             </group>
         </draw>
-    </group>
-    <group eventID="12" id="1">
-        <eq comment="false" x="192" y="132">
-            <isalive comment="false" id="0" x="0" y="0">
-                <ACTOR eid="lastcreated" id="0"/>
-            </isalive>
-            <false comment="false" id="1" x="0" y="0"/>
-        </eq>
     </group>
     <group eventID="12" id="-1"/>
     <group eventID="13" id="0">
