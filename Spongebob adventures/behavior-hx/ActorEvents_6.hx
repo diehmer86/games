@@ -40,7 +40,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -70,57 +69,88 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_0 extends SceneScript
+class ActorEvents_6 extends ActorScript
 {
-	public var _monsterdies:String;
-	public var _monster:Actor;
+	public var _currentdirection:String;
+	public var _spongebobY:Float;
+	public var _spongebobX:Float;
+	public var _kill:Actor;
+	public var _spongebob:Actor;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("monster dies", "_monsterdies");
-		nameMap.set("monster", "_monster");
+		super(actor);
+		nameMap.set("current direction", "_currentdirection");
+		_currentdirection = "";
+		nameMap.set("spongebob Y", "_spongebobY");
+		_spongebobY = 0.0;
+		nameMap.set("spongebob X", "_spongebobX");
+		_spongebobX = 0.0;
+		nameMap.set("kill", "_kill");
+		nameMap.set("spongebob", "_spongebob");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		createRecycledActor(getActorType(4), 40, 430, Script.FRONT);
-		createRecycledActor(getActorType(6), 613, 30, Script.FRONT);
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				actor.applyImpulse((Engine.engine.getGameAttribute("spongebob x") - actor.getX()), (Engine.engine.getGameAttribute("spongebob y") - actor.getY()), .2);
+			}
+		});
+		
+		/* ========================= Type & Type ========================== */
+		addSceneCollisionListener(getActorType(6).ID, getActorType(4).ID, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				recycleActor(event.otherActor);
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(0), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				recycleActor(actor);
+			}
+		});
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((getLastCreatedActor().getScreenX() < 0))
+				if((actor.getScreenX() < 0))
 				{
-					getLastCreatedActor().setX(1);
+					actor.setX(1);
 				}
-				else if((getLastCreatedActor().getScreenX() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
+				else if((actor.getScreenX() > (getScreenWidth() - (actor.getWidth()))))
 				{
-					getLastCreatedActor().setX(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
-				}
-				if((getLastCreatedActor().getScreenY() < 0))
-				{
-					getLastCreatedActor().setY(1);
-				}
-				else if((getLastCreatedActor().getScreenY() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
-				{
-					getLastCreatedActor().setY(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
+					actor.setX(((getScreenWidth() - (actor.getWidth())) - 1));
 				}
 			}
 		});
 		
-		/* ======================== Actor of Type ========================= */
-		addActorEntersRegionListener(getRegion(0), function(a:Actor, list:Array<Dynamic>):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && sameAsAny(getActorType(4),a.getType(),a.getGroup()))
+			if(wrapper.enabled)
 			{
-				switchScene(GameModel.get().scenes.get(1).getID(), null, createSlideUpTransition(.5));
+				if((actor.getScreenY() < 0))
+				{
+					actor.setY(1);
+				}
+				else if((actor.getScreenY() > (getScreenHeight() - (actor.getHeight()))))
+				{
+					actor.setY(((getScreenHeight() - (actor.getHeight())) - 1));
+				}
 			}
 		});
 		

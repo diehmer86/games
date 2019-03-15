@@ -443,32 +443,10 @@
         </play-sound4>
     </group>
     <group eventID="11" id="-1">
-        <other-actor comment="false" x="393" y="109"/>
-        <this-actor comment="false" x="256" y="108"/>
         <this-actor comment="false" x="37" y="102"/>
+        <this-actor comment="false" x="256" y="108"/>
+        <other-actor comment="false" x="393" y="109"/>
     </group>
-    <group eventID="12" id="0">
-        <draw comment="false" x="15" y="15">
-            <group eventID="12" id="-1">
-                <if comment="false" x="26" y="40">
-                    <group eventID="12" id="-1">
-                        <draw-text comment="false" x="37" y="78">
-                            <int id="0" val="you lose"/>
-                            <int id="1" val="400"/>
-                            <int id="2" val="250"/>
-                        </draw-text>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <isalive comment="false" id="0" x="0" y="0">
-                            <ACTOR eid="this" id="0"/>
-                        </isalive>
-                        <false comment="false" id="1" x="0" y="0"/>
-                    </eq>
-                </if>
-            </group>
-        </draw>
-    </group>
-    <group eventID="12" id="-1"/>
     <group eventID="13" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="13" id="-1">
@@ -564,4 +542,19 @@
         </if>
     </group>
     <group eventID="13" id="-1"/>
+    <group eventID="14" id="0">
+        <event-type-region comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <scene-change-through comment="false" x="26" y="47">
+                    <scene eid="3" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val=".5"/>
+                </scene-change-through>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="lastcreated" id="1"/>
+            <actortype eid="4" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="14" id="-1"/>
 </groups>
