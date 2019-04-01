@@ -17,11 +17,11 @@
             <event displayName="Updating" enabled="true" id="6" name="step" order="2" repeats="true"/>
             <event displayName="Updating" enabled="false" id="7" name="step" order="12" repeats="true"/>
             <event displayName="Keyboard" enabled="true" id="8" name="event-key-press-release" order="11" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="9" name="step" order="8" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="9" name="step" order="8" repeats="false"/>
             <event displayName="Updating" enabled="true" id="10" name="step" order="10" repeats="true"/>
             <event displayName="Actor - Any" enabled="false" id="11" name="collide" order="5" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="13" name="step" order="9" repeats="true"/>
-            <event displayName="Enters Region" enabled="true" id="14" name="event-type-region" order="6" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="13" name="step" order="9" repeats="false"/>
+            <event displayName="Enters Region" enabled="false" id="14" name="event-type-region" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="6" attachedevent="true" class="scripts.ActorEvents_6" classname="scripts.ActorEvents_6" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_6" oid="-1" package="scripts." shared="false" type="actor">
@@ -34,6 +34,7 @@
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
             <event displayName="Type - Type" enabled="true" id="19" name="event-collide-typetotype" order="10" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="20" name="step" order="19" repeats="true"/>
             <event displayName="Actor - Type" enabled="true" id="6" name="event-collide-actortotype" order="12" repeats="false"/>
             <event displayName="Updating" enabled="true" id="9" name="step" order="17" repeats="true"/>
             <event displayName="Updating" enabled="true" id="11" name="step" order="18" repeats="true"/>
@@ -100,14 +101,16 @@
     <snippet attachedevent="true" class="scripts.SceneEvents_2" classname="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="9" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" shared="false" type="scene">
         <blocks/>
         <events>
-            <event displayName="Drawing" enabled="false" id="2" name="draw" order="8" repeats="true"/>
-            <event displayName="Updating" enabled="false" id="3" name="step" order="7" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="4" name="step" order="6" repeats="true"/>
-            <event displayName="Enters Screen" enabled="false" id="6" name="event-type-screen" order="10" repeats="true"/>
+            <event displayName="Drawing" enabled="false" id="2" name="draw" order="10" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="3" name="step" order="9" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="4" name="step" order="8" repeats="true"/>
+            <event displayName="Enters Screen" enabled="false" id="6" name="event-type-screen" order="12" repeats="true"/>
             <event displayName="Created" enabled="true" id="7" name="init" order="2" repeats="true"/>
             <event displayName="Enters Region" enabled="false" id="8" name="event-actor-region" order="3" repeats="true"/>
             <event displayName="Enters Region" enabled="false" id="9" name="event-type-region" order="4" repeats="true"/>
             <event displayName="Enters Region" enabled="true" id="10" name="event-actor-region" order="5" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="11" name="step" order="6" repeats="true"/>
+            <event displayName="Enters Region" enabled="false" id="12" name="event-actor-region" order="7" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="17" attachedevent="true" class="scripts.ActorEvents_17" classname="scripts.ActorEvents_17" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_17" oid="-1" package="scripts." shared="false" type="actor">
@@ -135,6 +138,7 @@
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_13_13_health" classname="scripts.Design_13_13_health" desc="" description="" design="true" drawOrder="0" id="13" name="health" oid="-1" package="scripts" shared="false" type="actor">
@@ -155,6 +159,15 @@
             <event displayName="Type - Type Copy" enabled="true" id="2" name="event-collide-typetotype" order="4" repeats="true"/>
             <event displayName="Type - Type Copy" enabled="true" id="3" name="event-collide-typetotype" order="2" repeats="true"/>
             <event displayName="Type - Type Copy Copy" enabled="true" id="4" name="event-collide-typetotype" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="42" attachedevent="true" class="scripts.ActorEvents_42" classname="scripts.ActorEvents_42" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="15" name="ActorEvents_42" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="2" name="event-collide-typetotype" order="2" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="3" name="event-collide-typetotype" order="3" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="4" name="step" order="4" repeats="true"/>
         </events>
     </snippet>
 </pack>
