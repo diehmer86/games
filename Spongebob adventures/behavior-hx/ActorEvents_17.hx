@@ -83,7 +83,7 @@ class ActorEvents_17 extends ActorScript
 	{
 		
 		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(13).ID, getActorType(0).ID, function(event:Collision, list:Array<Dynamic>):Void
+		addSceneCollisionListener(getActorType(17).ID, getActorType(0).ID, function(event:Collision, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
@@ -105,7 +105,7 @@ class ActorEvents_17 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				actor.applyImpulse((Engine.engine.getGameAttribute("spongebob x") - actor.getX()), (Engine.engine.getGameAttribute("spongebob y") - actor.getY()), .3);
+				actor.applyImpulse((Engine.engine.getGameAttribute("spongebob x") - actor.getX()), (Engine.engine.getGameAttribute("spongebob y") - actor.getY()), .4);
 			}
 		});
 		

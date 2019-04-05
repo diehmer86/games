@@ -20,7 +20,7 @@
                             <int id="1" val="1"/>
                         </get-xy>
                     </minus>
-                    <int id="4" val=".2"/>
+                    <int id="4" val=".4"/>
                 </push-shove>
             </group>
         </step>

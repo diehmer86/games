@@ -87,7 +87,7 @@ class ActorEvents_31 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				actor.applyImpulse((Engine.engine.getGameAttribute("spongebob x") - actor.getX()), (Engine.engine.getGameAttribute("spongebob y") - actor.getY()), .2);
+				actor.applyImpulse((Engine.engine.getGameAttribute("spongebob x") - actor.getX()), (Engine.engine.getGameAttribute("spongebob y") - actor.getY()), .4);
 			}
 		});
 		
