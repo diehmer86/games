@@ -40,6 +40,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,44 +70,54 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_0 extends ActorScript
+class SceneEvents_1 extends SceneScript
 {
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
+		super();
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================= Member of Group ======================== */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && sameAsAny(getActorGroup(3),event.otherActor.getType(),event.otherActor.getGroup()))
-			{
-				recycleActor(actor);
-			}
-		});
+		/* ======================== When Creating ========================= */
+		createRecycledActor(getActorType(4), 9, 302, Script.FRONT);
+		createRecycledActor(getActorType(6), 638, 226, Script.FRONT);
+		createRecycledActor(getActorType(13), 500, 226, Script.FRONT);
 		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && sameAsAny(getActorType(6), event.otherActor.getType(),event.otherActor.getGroup()))
+			if(wrapper.enabled)
 			{
-				actor.shout("_customEvent_" + "Hit");
-				recycleActor(actor);
+				if((getLastCreatedActor().getScreenX() < 0))
+				{
+					getLastCreatedActor().setX(1);
+				}
+				else if((getLastCreatedActor().getScreenX() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
+				{
+					getLastCreatedActor().setX(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
+				}
+				if((getLastCreatedActor().getScreenY() < 0))
+				{
+					getLastCreatedActor().setY(1);
+				}
+				else if((getLastCreatedActor().getScreenY() > (getScreenWidth() - (getLastCreatedActor().getWidth()))))
+				{
+					getLastCreatedActor().setY(((getScreenWidth() - (getLastCreatedActor().getWidth())) - 1));
+				}
 			}
 		});
 		
 		/* ======================== Specific Actor ======================== */
-		addActorPositionListener(actor, function(enteredScreen:Bool, exitedScreen:Bool, enteredScene:Bool, exitedScene:Bool, list:Array<Dynamic>):Void
+		addActorEntersRegionListener(getRegion(0), function(a:Actor, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && exitedScene)
+			if(wrapper.enabled && sameAs(getActor(1), a))
 			{
-				recycleActor(actor);
+				switchScene(GameModel.get().scenes.get(2).getID(), null, createSlideDownTransition(1.01));
 			}
 		});
 		
