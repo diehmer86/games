@@ -70,13 +70,17 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_3 extends SceneScript
+class SceneEvents_0 extends SceneScript
 {
+	public var _monsterdies:String;
+	public var _monster:Actor;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("monster dies", "_monsterdies");
+		nameMap.set("monster", "_monster");
 		
 	}
 	
@@ -86,8 +90,6 @@ class SceneEvents_3 extends SceneScript
 		/* ======================== When Creating ========================= */
 		createRecycledActor(getActorType(4), 40, 430, Script.FRONT);
 		createRecycledActor(getActorType(6), 613, 30, Script.FRONT);
-		createRecycledActor(getActorType(31), 600, 45, Script.FRONT);
-		createRecycledActor(getActorType(42), 620, 30, Script.FRONT);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
@@ -118,7 +120,7 @@ class SceneEvents_3 extends SceneScript
 		{
 			if(wrapper.enabled && sameAsAny(getActorType(4),a.getType(),a.getGroup()))
 			{
-				switchScene(GameModel.get().scenes.get(4).getID(), null, createSlideLeftTransition(.5));
+				switchScene(GameModel.get().scenes.get(1).getID(), null, createSlideUpTransition(.5));
 			}
 		});
 		
