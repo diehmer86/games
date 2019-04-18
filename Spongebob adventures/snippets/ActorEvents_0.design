@@ -4,7 +4,7 @@
         <event-collide-actortogroup comment="false" x="15" y="15">
             <group eventID="9" id="-1">
                 <die comment="false" x="26" y="47">
-                    <ACTOR eid="this" id="0"/>
+                    <collide-member-of-group comment="false" id="0" x="0" y="0"/>
                 </die>
             </group>
             <ACTOR eid="this" id="0"/>

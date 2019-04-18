@@ -62,6 +62,12 @@
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="fireball" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <tileset across="2" atlasID="0" desc="" down="2" id="49" name="last onE" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="7" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="8" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="5" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="6" data="" durations="100" frames="3" id="3" order="-1"/>
+    </tileset>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="3" fixedrot="true" fric="0.2" gid="3" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="monster" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="false">
         <snippets/>
     </actor>

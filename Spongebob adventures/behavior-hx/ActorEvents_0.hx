@@ -87,7 +87,7 @@ class ActorEvents_0 extends ActorScript
 		{
 			if(wrapper.enabled && sameAsAny(getActorGroup(3),event.otherActor.getType(),event.otherActor.getGroup()))
 			{
-				recycleActor(actor);
+				recycleActor(event.otherActor);
 			}
 		});
 		

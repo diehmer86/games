@@ -70,7 +70,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_1 extends SceneScript
+class SceneEvents_3 extends SceneScript
 {
 	
 	
@@ -84,9 +84,10 @@ class SceneEvents_1 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		createRecycledActor(getActorType(4), 9, 302, Script.FRONT);
-		createRecycledActor(getActorType(6), 638, 226, Script.FRONT);
-		createRecycledActor(getActorType(13), 500, 226, Script.FRONT);
+		createRecycledActor(getActorType(4), 40, 430, Script.FRONT);
+		createRecycledActor(getActorType(6), 613, 30, Script.FRONT);
+		createRecycledActor(getActorType(31), 600, 45, Script.FRONT);
+		createRecycledActor(getActorType(42), 620, 30, Script.FRONT);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
@@ -112,12 +113,12 @@ class SceneEvents_1 extends SceneScript
 			}
 		});
 		
-		/* ======================== Specific Actor ======================== */
+		/* ======================== Actor of Type ========================= */
 		addActorEntersRegionListener(getRegion(0), function(a:Actor, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && sameAs(getActor(1), a))
+			if(wrapper.enabled && sameAsAny(getActorType(4),a.getType(),a.getGroup()))
 			{
-				switchScene(GameModel.get().scenes.get(2).getID(), null, createSlideDownTransition(1.01));
+				switchScene(GameModel.get().scenes.get(4).getID(), null, createSlideLeftTransition(.5));
 			}
 		});
 		
