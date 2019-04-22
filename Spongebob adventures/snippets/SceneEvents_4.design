@@ -140,28 +140,6 @@
         </step>
     </group>
     <group eventID="2" id="-1"/>
-    <group eventID="3" id="0">
-        <draw comment="false" x="15" y="15">
-            <group eventID="3" id="-1">
-                <if comment="false" x="26" y="40">
-                    <group eventID="3" id="-1">
-                        <draw-text comment="false" x="37" y="78">
-                            <int id="0" val="YOU WIN !!!"/>
-                            <int id="1" val="255"/>
-                            <int id="2" val="315"/>
-                        </draw-text>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <isalive comment="false" id="0" x="0" y="0">
-                            <ACTOR eid="1" id="0"/>
-                        </isalive>
-                        <false comment="false" id="1" x="0" y="0"/>
-                    </eq>
-                </if>
-            </group>
-        </draw>
-    </group>
-    <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <event-actor-region comment="false" x="15" y="15">
             <group eventID="4" id="-1">

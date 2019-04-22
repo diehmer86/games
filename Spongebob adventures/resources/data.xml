@@ -204,6 +204,26 @@
             <poly data="4,25,30,65,30,65,88,25,88" density="0.1" fric="0.2" gid="-1000" id="0" name="walking up" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <tileset across="2" atlasID="0" desc="" down="2" id="52" name="tile set 35" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="3" id="3" order="-1"/>
+    </tileset>
+    <tileset across="1" atlasID="0" desc="" down="1" id="53" name="tileset" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
+    </tileset>
+    <tileset across="3" atlasID="0" desc="" down="3" id="54" name="tset" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="7" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="8" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="3" data="" durations="100" frames="3" id="3" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="4" id="4" order="-1"/>
+        <tile collision="4" data="" durations="100" frames="5" id="5" order="-1"/>
+        <tile collision="5" data="" durations="100" frames="6" id="6" order="-1"/>
+        <tile collision="2" data="" durations="100" frames="7" id="7" order="-1"/>
+        <tile collision="6" data="" durations="100" frames="8" id="8" order="-1"/>
+    </tileset>
     <tileset across="3" atlasID="0" desc="" down="3" id="41" name="Vortex" oid="-1" shared="false" th="32" tw="32">
         <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>

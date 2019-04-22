@@ -172,7 +172,6 @@
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Updating" enabled="true" id="2" name="step" order="5" repeats="true"/>
-            <event displayName="\" enabled="false" id="3" name="draw" order="3" repeats="true"/>
             <event displayName="Enters Region" enabled="true" id="4" name="event-actor-region" order="4" repeats="true"/>
         </events>
     </snippet>
@@ -182,5 +181,9 @@
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
         </events>
+    </snippet>
+    <snippet actorid="50" attachedevent="true" class="scripts.ActorEvents_50" classname="scripts.ActorEvents_50" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" name="ActorEvents_50" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
