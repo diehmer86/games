@@ -70,6 +70,14 @@
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="55" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="last munster" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="56" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="96" id="56" name="last munster" shared="false" width="96">
+        <anim across="1" down="1" durations="100" height="96" id="0" loop="true" name="Animation 0" numframes="1" originx="48" originy="48" sync="false" version="2" width="96">
+            <poly data="4,0,0,96,0,96,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <tileset across="2" atlasID="0" desc="" down="2" id="49" name="last onE" oid="-1" shared="false" th="32" tw="32">
         <tile collision="7" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="8" data="" durations="100" frames="1" id="1" order="-1"/>
