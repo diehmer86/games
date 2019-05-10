@@ -70,7 +70,7 @@
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="55" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="last munster" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="56" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="true" fric="0.2" gid="3" id="55" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="last munster" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="56" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="96" id="56" name="last munster" shared="false" width="96">
