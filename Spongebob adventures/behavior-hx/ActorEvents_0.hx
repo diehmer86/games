@@ -91,6 +91,15 @@ class ActorEvents_0 extends ActorScript
 			}
 		});
 		
+		/* ======================= Member of Group ======================== */
+		addActorTypeGroupPositionListener(getActorGroup(4).ID + 1000000, function(a:Actor, enteredScreen:Bool, exitedScreen:Bool, enteredScene:Bool, exitedScene:Bool, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && exitedScene)
+			{
+				recycleActor(actor);
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

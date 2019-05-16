@@ -12,4 +12,17 @@
         </event-collide-actortogroup>
     </group>
     <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <event-group-screen comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <actorgroup eid="4" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="0"/>
+        </event-group-screen>
+    </group>
+    <group eventID="10" id="-1"/>
 </groups>
