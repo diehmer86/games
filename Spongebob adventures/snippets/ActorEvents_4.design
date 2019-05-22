@@ -443,9 +443,9 @@
         </play-sound4>
     </group>
     <group eventID="11" id="-1">
-        <other-actor comment="false" x="393" y="109"/>
-        <this-actor comment="false" x="256" y="108"/>
         <this-actor comment="false" x="37" y="102"/>
+        <this-actor comment="false" x="256" y="108"/>
+        <other-actor comment="false" x="393" y="109"/>
     </group>
     <group eventID="13" id="0">
         <step comment="false" x="15" y="15">

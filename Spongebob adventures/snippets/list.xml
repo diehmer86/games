@@ -156,6 +156,10 @@
             <event displayName="Type - Type Copy" enabled="true" id="2" name="event-collide-typetotype" order="4" repeats="true"/>
             <event displayName="Type - Type Copy" enabled="true" id="3" name="event-collide-typetotype" order="2" repeats="true"/>
             <event displayName="Type - Type Copy Copy" enabled="true" id="4" name="event-collide-typetotype" order="3" repeats="true"/>
+            <event displayName="Type - Type Copy Copy" enabled="true" id="5" name="event-collide-typetotype" order="5" repeats="true"/>
+            <event displayName="Type - Type Copy Copy Copy" enabled="true" id="6" name="event-collide-typetotype" order="6" repeats="true"/>
+            <event displayName="Type - Type Copy Copy Copy Copy" enabled="true" id="7" name="event-collide-typetotype" order="7" repeats="true"/>
+            <event displayName="Type - Type Copy Copy Copy Copy Copy" enabled="true" id="8" name="event-collide-typetotype" order="8" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="42" attachedevent="true" class="scripts.ActorEvents_42" classname="scripts.ActorEvents_42" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="15" name="ActorEvents_42" oid="-1" package="scripts." shared="false" type="actor">
@@ -205,10 +209,6 @@
         </events>
     </snippet>
     <snippet actorid="57" attachedevent="true" class="scripts.ActorEvents_57" classname="scripts.ActorEvents_57" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" name="ActorEvents_57" oid="-1" package="scripts." shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_6" classname="scripts.SceneEvents_6" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="21" name="SceneEvents_6" oid="-1" package="scripts." sceneid="6" shared="false" type="scene">
         <blocks/>
         <events/>
     </snippet>

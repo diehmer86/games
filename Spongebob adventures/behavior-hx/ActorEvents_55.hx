@@ -69,85 +69,40 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_14_14_hit extends ActorScript
+class ActorEvents_55 extends ActorScript
 {
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Actor", "actor");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(13).ID, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================== When Creating ========================= */
+		actor.setYVelocity(40);
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				recycleActor(actor);
+				if((actor.getY() >= 300))
+				{
+					actor.setYVelocity(-40);
+				}
+				else if((actor.getY() <= 20))
+				{
+					actor.setYVelocity(40);
+				}
 			}
 		});
 		
 		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(50).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(6).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(17).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(55).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(31).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(57).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(42).ID, function(event:Collision, list:Array<Dynamic>):Void
+		addSceneCollisionListener(getActorType(55).ID, getActorType(0).ID, function(event:Collision, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{

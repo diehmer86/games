@@ -2,7 +2,11 @@
 <groups>
     <group eventID="1" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
-            <group eventID="1" id="-1"/>
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
             <actortype eid="0" id="0"/>
             <actortype eid="13" id="1"/>
         </event-collide-typetotype>
@@ -10,7 +14,11 @@
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
-            <group eventID="1" id="-1"/>
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
             <actortype eid="0" id="0"/>
             <actortype eid="17" id="1"/>
         </event-collide-typetotype>
@@ -18,18 +26,74 @@
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
-            <group eventID="1" id="-1"/>
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
             <actortype eid="0" id="0"/>
-            <actortype eid="6" id="1"/>
+            <actortype eid="50" id="1"/>
         </event-collide-typetotype>
     </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
-            <group eventID="1" id="-1"/>
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
             <actortype eid="0" id="0"/>
             <actortype eid="6" id="1"/>
         </event-collide-typetotype>
     </group>
     <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <actortype eid="0" id="0"/>
+            <actortype eid="55" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <actortype eid="0" id="0"/>
+            <actortype eid="31" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <actortype eid="0" id="0"/>
+            <actortype eid="57" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <actortype eid="0" id="0"/>
+            <actortype eid="42" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="8" id="-1"/>
 </groups>

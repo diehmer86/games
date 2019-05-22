@@ -40,6 +40,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,89 +70,31 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_14_14_hit extends ActorScript
+class SceneEvents_4 extends SceneScript
 {
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
-		nameMap.set("Actor", "actor");
+		super();
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(13).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
+		/* ======================== When Creating ========================= */
+		createRecycledActor(getActorType(6), 638, 226, Script.FRONT);
+		createRecycledActor(getActorType(17), 490, 226, Script.FRONT);
+		createRecycledActor(getActorType(31), 500, 226, Script.FRONT);
+		createRecycledActor(getActorType(42), 638, 226, Script.FRONT);
 		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(50).ID, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================== Specific Actor ======================== */
+		addActorEntersRegionListener(getRegion(1), function(a:Actor, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled)
+			if(wrapper.enabled && sameAs(getActor(2), a))
 			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(6).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(17).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(55).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(31).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(57).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(42).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
+				switchScene(GameModel.get().scenes.get(5).getID(), null, createSlideLeftTransition(1.01));
 			}
 		});
 		
