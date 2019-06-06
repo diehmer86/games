@@ -120,15 +120,6 @@ class Design_14_14_hit extends ActorScript
 		});
 		
 		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(0).ID, getActorType(55).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				recycleActor(actor);
-			}
-		});
-		
-		/* ========================= Type & Type ========================== */
 		addSceneCollisionListener(getActorType(0).ID, getActorType(31).ID, function(event:Collision, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)

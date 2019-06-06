@@ -217,18 +217,18 @@ class ActorEvents_4 extends ActorScript
 				if((actor.getAnimation() == "idle left"))
 				{
 					getLastCreatedActor().applyImpulseInDirection(180, 100);
-					if((actor.getAnimation() == "idle up"))
-					{
-						getLastCreatedActor().applyImpulseInDirection(90, 100);
-					}
-					if((actor.getAnimation() == "idle down"))
-					{
-						getLastCreatedActor().applyImpulseInDirection(90, 100);
-					}
-					if((actor.getAnimation() == "idle right"))
-					{
-						getLastCreatedActor().applyImpulseInDirection(0, 100);
-					}
+				}
+				if((actor.getAnimation() == "idle up"))
+				{
+					getLastCreatedActor().applyImpulseInDirection(90, 100);
+				}
+				if((actor.getAnimation() == "idle down"))
+				{
+					getLastCreatedActor().applyImpulseInDirection(90, 100);
+				}
+				if((actor.getAnimation() == "idle right"))
+				{
+					getLastCreatedActor().applyImpulseInDirection(0, 100);
 				}
 			}
 		});

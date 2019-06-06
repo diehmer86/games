@@ -279,60 +279,60 @@
                             <int id="2" val="180"/>
                             <int id="3" val="100"/>
                         </push-shove2>
-                        <if comment="false" x="37" y="455">
-                            <group eventID="8" id="-1">
-                                <push-shove2 comment="false" x="48" y="493">
-                                    <ACTOR eid="lastcreated" id="0"/>
-                                    <int id="1" val="1"/>
-                                    <int id="2" val="90"/>
-                                    <int id="3" val="100"/>
-                                </push-shove2>
-                            </group>
-                            <eq comment="false" id="0" x="0" y="0">
-                                <getanim comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                </getanim>
-                                <int id="1" val="idle up"/>
-                            </eq>
-                        </if>
-                        <if comment="false" x="37" y="532">
-                            <group eventID="8" id="-1">
-                                <push-shove2 comment="false" x="48" y="570">
-                                    <ACTOR eid="lastcreated" id="0"/>
-                                    <int id="1" val="1"/>
-                                    <int id="2" val="90"/>
-                                    <int id="3" val="100"/>
-                                </push-shove2>
-                            </group>
-                            <eq comment="false" id="0" x="0" y="0">
-                                <getanim comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                </getanim>
-                                <int id="1" val="idle down"/>
-                            </eq>
-                        </if>
-                        <if comment="false" x="37" y="609">
-                            <group eventID="8" id="-1">
-                                <push-shove2 comment="false" x="48" y="647">
-                                    <ACTOR eid="lastcreated" id="0"/>
-                                    <int id="1" val="1"/>
-                                    <int id="2" val="0"/>
-                                    <int id="3" val="100"/>
-                                </push-shove2>
-                            </group>
-                            <eq comment="false" id="0" x="0" y="0">
-                                <getanim comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                </getanim>
-                                <int id="1" val="idle right"/>
-                            </eq>
-                        </if>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <getanim comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
                         </getanim>
                         <int id="1" val="idle left"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="467">
+                    <group eventID="8" id="-1">
+                        <push-shove2 comment="false" x="37" y="505">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="90"/>
+                            <int id="3" val="100"/>
+                        </push-shove2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getanim>
+                        <int id="1" val="idle up"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="544">
+                    <group eventID="8" id="-1">
+                        <push-shove2 comment="false" x="37" y="582">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="90"/>
+                            <int id="3" val="100"/>
+                        </push-shove2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getanim>
+                        <int id="1" val="idle down"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="621">
+                    <group eventID="8" id="-1">
+                        <push-shove2 comment="false" x="37" y="659">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="100"/>
+                        </push-shove2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getanim>
+                        <int id="1" val="idle right"/>
                     </eq>
                 </if>
             </group>
@@ -443,9 +443,9 @@
         </play-sound4>
     </group>
     <group eventID="11" id="-1">
-        <this-actor comment="false" x="37" y="102"/>
-        <this-actor comment="false" x="256" y="108"/>
         <other-actor comment="false" x="393" y="109"/>
+        <this-actor comment="false" x="256" y="108"/>
+        <this-actor comment="false" x="37" y="102"/>
     </group>
     <group eventID="13" id="0">
         <step comment="false" x="15" y="15">

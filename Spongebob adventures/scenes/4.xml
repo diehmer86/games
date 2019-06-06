@@ -5,14 +5,10 @@
         <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
-    <regions>
-        <region b="64" g="64" h="150" id="1" name="Region 1" pts="4,86.0,0.0,86.0,150.0,0.0,150.0,0.0,0.0" r="64" type="box" w="86" x="510" y="130"/>
-    </regions>
+    <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="6" name="monster 1" sx="1.0" sy="1.0" x="558" y="43" z="0"/>
         <actor a="0.0" aid="2" c="false" group="0" id="4" name="spongebob 2" sx="1.0" sy="1.0" x="-2" y="342" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="55" name="last munster 3" sx="1.0" sy="1.0" x="426" y="-17" z="0"/>
     </actors>
     <snippets/>
     <terrain>

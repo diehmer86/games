@@ -3,25 +3,31 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <create-actor3 comment="false" x="26" y="40">
+                <set-val-16-2 comment="false" x="26" y="40">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-16-2>
+                <set-val-16-3 comment="false" x="26" y="65">
+                    <int id="0" val="4"/>
+                </set-val-16-3>
+                <create-actor3 comment="false" x="26" y="85">
                     <actortype eid="6" id="0"/>
                     <int id="1" val="638"/>
                     <int id="2" val="226"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <create-actor3 comment="false" x="26" y="67">
+                <create-actor3 comment="false" x="26" y="112">
                     <actortype eid="17" id="0"/>
                     <int id="1" val="490"/>
                     <int id="2" val="226"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <create-actor3 comment="false" x="26" y="94">
+                <create-actor3 comment="false" x="26" y="139">
                     <actortype eid="31" id="0"/>
                     <int id="1" val="500"/>
                     <int id="2" val="226"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <create-actor3 comment="false" x="26" y="121">
+                <create-actor3 comment="false" x="26" y="166">
                     <actortype eid="42" id="0"/>
                     <int id="1" val="638"/>
                     <int id="2" val="226"/>
@@ -168,4 +174,52 @@
         </init>
     </group>
     <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="59" id="0"/>
+                </set-font-new>
+                <if comment="false" x="26" y="67">
+                    <group eventID="6" id="-1">
+                        <draw-text comment="false" x="37" y="97">
+                            <int id="0" val="WINNER WINNER !!!!"/>
+                            <int id="1" val="274"/>
+                            <int id="2" val="217"/>
+                        </draw-text>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-16-2 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="8" id="0">
+        <event-group-create-kill comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <incdec comment="false" x="26" y="47">
+                    <int id="0" val="3"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="1"/>
+                </incdec>
+                <if comment="false" x="26" y="74">
+                    <group eventID="8" id="-1">
+                        <set-val-16-2 comment="false" x="37" y="104">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-16-2>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-16-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="1"/>
+            <actorgroup eid="3" id="1"/>
+        </event-group-create-kill>
+    </group>
+    <group eventID="8" id="-1"/>
 </groups>
